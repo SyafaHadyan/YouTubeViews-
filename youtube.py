@@ -16,16 +16,16 @@ class Views(Browser, Tor):
 
     def __init__(self, urllist, visits, min, max):
 
-        self.bots = 5 # max amount of bots to use
+        self.bots = 10 # max amount of bots to use
         self.count = 0 # returning bots
         self.ip = None
         self.alive = True
-        self.targets = {} # {url: visits}
+        self.targets = {youtu.be/u-KEKVBYo70: 500} # {url: visits}
         self.recentIPs = Queue(10)
 
-        self.min = int(min)
-        self.max = int(max)
-        self.visits = int(visits)
+        self.min = int(5)
+        self.max = int(19)
+        self.visits = int(500)
 
         if not path.exists(urllist):
             exit('Error: Unable to locate `{}`'.format(urllist))
