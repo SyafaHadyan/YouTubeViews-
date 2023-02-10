@@ -20,7 +20,7 @@ class Views(Browser, Tor):
         self.count = 0 # returning bots
         self.ip = None
         self.alive = True
-        self.targets = {youtu.be/u-KEKVBYo70: 500} # {url: visits}
+        self.targets = {"https://youtu.be/u-KEKVBYo70": 500} # {url: visits}
         self.recentIPs = Queue(10)
 
         self.min = int(5)
