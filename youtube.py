@@ -20,11 +20,11 @@ class Views(Browser, Tor):
         self.count = 0 # returning bots
         self.ip = None
         self.alive = True
-        self.targets = {"https://youtu.be/u-KEKVBYo70": 500} # {url: visits}
+        self.targets = {"https://youtu.be/jh3hWTzrEk8": 500} # {url: visits}
         self.recentIPs = Queue(10)
 
-        self.min = int(5)
-        self.max = int(19)
+        self.min = int(60)
+        self.max = int(120)
         self.visits = int(500)
 
         if not path.exists(urllist):
